@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-display{
+    display: flex;
+    justify-content: center;
+}
+.container-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90px;
+}
+.display{
+    display: flex;
+}
+
+button{
+    width: 30px;
+    height: 30px;
+    border: 5px 5px black;
+    align-items: center;
+}
