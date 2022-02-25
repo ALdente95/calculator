@@ -1,25 +1,50 @@
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.container-display{
-    display: flex;
-    justify-content: center;
-}
-.container-2{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 90px;
-}
-.display{
-    display: flex;
+.main-container{
+font-family: Gotham Rounded, sans-serif;
+font-weight: normal;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+flex-direction: column;
 }
 
-button{
-    width: 30px;
-    height: 30px;
-    border: 5px 5px black;
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(241, 240, 240);
+}
+
+.main-container>button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: aliceblue;
+}
+.main-container>button:hover{
+    background-color: rgb(199, 199, 199);
+}
+
+.output-container{
+    grid-column: 1/-1;
+    background-color: aliceblue;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output-container .previous-operand{
+    font-size: 1.5rem;
+}
+.output-container .current-operand{
+    font-size: 2.5rem;
+}
+
+.button-container{
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
