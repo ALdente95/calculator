@@ -1,0 +1,21 @@
+click number ---> 12:
+    number = 12 -- display
+
+previous number = number (12)
+
+click operator --> +:
+    operator = "+"
+    previous array = number + operator -- display
+
+click new number --> 3:
+    new number = 3 -- display
+
+click new operator --> -:
+
+    operated number = new number + previous (15)
+
+    new previous array = operated number + new operator (15-)
+
+    current number = operated number
+
+repeat
