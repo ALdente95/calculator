@@ -1,50 +1,35 @@
 .main-container{
 font-family: Gotham Rounded, sans-serif;
-font-weight: normal;
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-flex-direction: column;
+max-width: 400px;
+margin: 10vh auto 0 auto;
+box-shadow: 0px 0px 43px 17px rgba(241, 240, 240);
 }
 
-body{
-    padding: 0;
-    margin: 0;
-    background: rgb(241, 240, 240);
-}
-
-.main-container>button{
-    cursor: pointer;
-    font-size: 2rem;
-    border: 1px solid white;
-    outline: none;
-    background-color: aliceblue;
-}
 .main-container>button:hover{
     background-color: rgb(199, 199, 199);
 }
 
 .output-container{
-    grid-column: 1/-1;
-    background-color: aliceblue;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 10px;
-    word-wrap: break-word;
-    word-break: break-all;
-}
-.output-container .previous-operand{
-    font-size: 1.5rem;
-}
-.output-container .current-operand{
-    font-size: 2.5rem;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    text-align: right;
+    font-size: 25px;
 }
 
 .button-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.number, .operation,
+.equals, .clear, .delete{
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
 }
